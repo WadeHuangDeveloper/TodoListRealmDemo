@@ -1,0 +1,560 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F69FBB492D945533009EAE60 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = F6D829CF2D939E020057C0D0 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F69FBB992D9554EF009EAE60 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69FBB982D9554EF009EAE60 /* TaskModel.swift */; };
+		F6D829B12D939BBD0057C0D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6D829A82D939BBD0057C0D0 /* Assets.xcassets */; };
+		F6D829B32D939BBD0057C0D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6D829AB2D939BBD0057C0D0 /* LaunchScreen.storyboard */; };
+		F6D829B42D939BBD0057C0D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6D829AD2D939BBD0057C0D0 /* Main.storyboard */; };
+		F6D829B52D939BBD0057C0D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D829A72D939BBD0057C0D0 /* AppDelegate.swift */; };
+		F6D829B62D939BBD0057C0D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D829AE2D939BBD0057C0D0 /* SceneDelegate.swift */; };
+		F6D829B92D939BE10057C0D0 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D829B82D939BE10057C0D0 /* TaskTableViewCell.swift */; };
+		F6D829BB2D939BF40057C0D0 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D829BA2D939BF40057C0D0 /* TaskListViewController.swift */; };
+		F6D829BD2D939BFB0057C0D0 /* TaskObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D829BC2D939BFB0057C0D0 /* TaskObject.swift */; };
+		F6D829BF2D939C080057C0D0 /* TaskListViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D829BE2D939C080057C0D0 /* TaskListViewControllerViewModel.swift */; };
+		F6D829C12D939C120057C0D0 /* TaskTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D829C02D939C120057C0D0 /* TaskTableViewCellViewModel.swift */; };
+		F6D829C92D939C710057C0D0 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D829C82D939C710057C0D0 /* RealmService.swift */; };
+		F6D829D02D939E020057C0D0 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F6D829CF2D939E020057C0D0 /* RealmSwift */; };
+		F6D829D42D939FA60057C0D0 /* UIColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D829D32D939FA60057C0D0 /* UIColorResource.swift */; };
+		F6D829D62D939FB50057C0D0 /* UITextResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D829D52D939FB50057C0D0 /* UITextResource.swift */; };
+		F6D829D82D93A0880057C0D0 /* TaskEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D829D72D93A0880057C0D0 /* TaskEditViewController.swift */; };
+		F6D829DA2D93A09B0057C0D0 /* TaskEditViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D829D92D93A09B0057C0D0 /* TaskEditViewControllerViewModel.swift */; };
+		F6D829DC2D93A1E20057C0D0 /* UIImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D829DB2D93A1E20057C0D0 /* UIImageResource.swift */; };
+		F6D829DE2D93A50D0057C0D0 /* AppFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D829DD2D93A50D0057C0D0 /* AppFactory.swift */; };
+		F6D829E02D93A5430057C0D0 /* TaskRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D829DF2D93A5430057C0D0 /* TaskRepositoryProtocol.swift */; };
+		F6D829E22D93A6020057C0D0 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D829E12D93A6020057C0D0 /* TaskRepository.swift */; };
+		F6D829E62D93AED00057C0D0 /* TaskRepositoryEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D829E52D93AED00057C0D0 /* TaskRepositoryEvent.swift */; };
+		F6D829E82D93B7790057C0D0 /* UIFontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D829E72D93B7790057C0D0 /* UIFontResource.swift */; };
+		F6D829EA2D93C15D0057C0D0 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D829E92D93C15D0057C0D0 /* Date+Extension.swift */; };
+		F6D829EC2D93E2900057C0D0 /* TaskCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D829EB2D93E2900057C0D0 /* TaskCreateViewController.swift */; };
+		F6D829EE2D93E2C50057C0D0 /* TaskCreateViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D829ED2D93E2C50057C0D0 /* TaskCreateViewControllerViewModel.swift */; };
+		F6D829F02D942C690057C0D0 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D829EF2D942C690057C0D0 /* EventViewModel.swift */; };
+		F6D829F22D944BDB0057C0D0 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D829F12D944BDB0057C0D0 /* UIButton+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F69FBB4A2D945533009EAE60 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F69FBB492D945533009EAE60 /* RealmSwift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F69FBB982D9554EF009EAE60 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		F6D8298F2D939BA90057C0D0 /* TodoListRealmDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoListRealmDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6D829A72D939BBD0057C0D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F6D829A82D939BBD0057C0D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6D829A92D939BBD0057C0D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6D829AA2D939BBD0057C0D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F6D829AC2D939BBD0057C0D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F6D829AE2D939BBD0057C0D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F6D829B82D939BE10057C0D0 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		F6D829BA2D939BF40057C0D0 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		F6D829BC2D939BFB0057C0D0 /* TaskObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskObject.swift; sourceTree = "<group>"; };
+		F6D829BE2D939C080057C0D0 /* TaskListViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewControllerViewModel.swift; sourceTree = "<group>"; };
+		F6D829C02D939C120057C0D0 /* TaskTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		F6D829C82D939C710057C0D0 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		F6D829D32D939FA60057C0D0 /* UIColorResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorResource.swift; sourceTree = "<group>"; };
+		F6D829D52D939FB50057C0D0 /* UITextResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextResource.swift; sourceTree = "<group>"; };
+		F6D829D72D93A0880057C0D0 /* TaskEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditViewController.swift; sourceTree = "<group>"; };
+		F6D829D92D93A09B0057C0D0 /* TaskEditViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditViewControllerViewModel.swift; sourceTree = "<group>"; };
+		F6D829DB2D93A1E20057C0D0 /* UIImageResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageResource.swift; sourceTree = "<group>"; };
+		F6D829DD2D93A50D0057C0D0 /* AppFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFactory.swift; sourceTree = "<group>"; };
+		F6D829DF2D93A5430057C0D0 /* TaskRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepositoryProtocol.swift; sourceTree = "<group>"; };
+		F6D829E12D93A6020057C0D0 /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
+		F6D829E52D93AED00057C0D0 /* TaskRepositoryEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepositoryEvent.swift; sourceTree = "<group>"; };
+		F6D829E72D93B7790057C0D0 /* UIFontResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontResource.swift; sourceTree = "<group>"; };
+		F6D829E92D93C15D0057C0D0 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		F6D829EB2D93E2900057C0D0 /* TaskCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCreateViewController.swift; sourceTree = "<group>"; };
+		F6D829ED2D93E2C50057C0D0 /* TaskCreateViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCreateViewControllerViewModel.swift; sourceTree = "<group>"; };
+		F6D829EF2D942C690057C0D0 /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		F6D829F12D944BDB0057C0D0 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6D8298C2D939BA90057C0D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6D829D02D939E020057C0D0 /* RealmSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F652ACBC2D9452A600C54036 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F6D829E92D93C15D0057C0D0 /* Date+Extension.swift */,
+				F6D829F12D944BDB0057C0D0 /* UIButton+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F652ACBD2D9452B200C54036 /* RealmObject */ = {
+			isa = PBXGroup;
+			children = (
+				F6D829BC2D939BFB0057C0D0 /* TaskObject.swift */,
+			);
+			path = RealmObject;
+			sourceTree = "<group>";
+		};
+		F6D829862D939BA90057C0D0 = {
+			isa = PBXGroup;
+			children = (
+				F6D829B02D939BBD0057C0D0 /* TodoListRealmDemo */,
+				F6D829902D939BA90057C0D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6D829902D939BA90057C0D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6D8298F2D939BA90057C0D0 /* TodoListRealmDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6D829B02D939BBD0057C0D0 /* TodoListRealmDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F6D829A82D939BBD0057C0D0 /* Assets.xcassets */,
+				F6D829A92D939BBD0057C0D0 /* Info.plist */,
+				F6D829AB2D939BBD0057C0D0 /* LaunchScreen.storyboard */,
+				F6D829AD2D939BBD0057C0D0 /* Main.storyboard */,
+				F6D829A72D939BBD0057C0D0 /* AppDelegate.swift */,
+				F6D829AE2D939BBD0057C0D0 /* SceneDelegate.swift */,
+				F6D829DD2D93A50D0057C0D0 /* AppFactory.swift */,
+				F6D829C22D939C160057C0D0 /* Model */,
+				F6D829C42D939C260057C0D0 /* View */,
+				F6D829C32D939C200057C0D0 /* ViewModel */,
+			);
+			path = TodoListRealmDemo;
+			sourceTree = "<group>";
+		};
+		F6D829C22D939C160057C0D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F69FBB982D9554EF009EAE60 /* TaskModel.swift */,
+				F652ACBD2D9452B200C54036 /* RealmObject */,
+				F652ACBC2D9452A600C54036 /* Extensions */,
+				F6D829C52D939C500057C0D0 /* UIResources */,
+				F6D829C72D939C630057C0D0 /* Repository */,
+				F6D829C62D939C5C0057C0D0 /* Service */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F6D829C32D939C200057C0D0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F6D829BE2D939C080057C0D0 /* TaskListViewControllerViewModel.swift */,
+				F6D829ED2D93E2C50057C0D0 /* TaskCreateViewControllerViewModel.swift */,
+				F6D829D92D93A09B0057C0D0 /* TaskEditViewControllerViewModel.swift */,
+				F6D829C02D939C120057C0D0 /* TaskTableViewCellViewModel.swift */,
+				F6D829EF2D942C690057C0D0 /* EventViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F6D829C42D939C260057C0D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F6D829BA2D939BF40057C0D0 /* TaskListViewController.swift */,
+				F6D829EB2D93E2900057C0D0 /* TaskCreateViewController.swift */,
+				F6D829D72D93A0880057C0D0 /* TaskEditViewController.swift */,
+				F6D829B82D939BE10057C0D0 /* TaskTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F6D829C52D939C500057C0D0 /* UIResources */ = {
+			isa = PBXGroup;
+			children = (
+				F6D829D32D939FA60057C0D0 /* UIColorResource.swift */,
+				F6D829D52D939FB50057C0D0 /* UITextResource.swift */,
+				F6D829DB2D93A1E20057C0D0 /* UIImageResource.swift */,
+				F6D829E72D93B7790057C0D0 /* UIFontResource.swift */,
+			);
+			path = UIResources;
+			sourceTree = "<group>";
+		};
+		F6D829C62D939C5C0057C0D0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F6D829C82D939C710057C0D0 /* RealmService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F6D829C72D939C630057C0D0 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F6D829DF2D93A5430057C0D0 /* TaskRepositoryProtocol.swift */,
+				F6D829E12D93A6020057C0D0 /* TaskRepository.swift */,
+				F6D829E52D93AED00057C0D0 /* TaskRepositoryEvent.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6D8298E2D939BA90057C0D0 /* TodoListRealmDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6D829A22D939BAA0057C0D0 /* Build configuration list for PBXNativeTarget "TodoListRealmDemo" */;
+			buildPhases = (
+				F6D8298B2D939BA90057C0D0 /* Sources */,
+				F6D8298C2D939BA90057C0D0 /* Frameworks */,
+				F6D8298D2D939BA90057C0D0 /* Resources */,
+				F69FBB4A2D945533009EAE60 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodoListRealmDemo;
+			packageProductDependencies = (
+				F6D829CF2D939E020057C0D0 /* RealmSwift */,
+			);
+			productName = TodoListRealmDemo;
+			productReference = F6D8298F2D939BA90057C0D0 /* TodoListRealmDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6D829872D939BA90057C0D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					F6D8298E2D939BA90057C0D0 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = F6D8298A2D939BA90057C0D0 /* Build configuration list for PBXProject "TodoListRealmDemo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F6D829862D939BA90057C0D0;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F6D829CE2D939E020057C0D0 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F6D829902D939BA90057C0D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6D8298E2D939BA90057C0D0 /* TodoListRealmDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6D8298D2D939BA90057C0D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6D829B12D939BBD0057C0D0 /* Assets.xcassets in Resources */,
+				F6D829B32D939BBD0057C0D0 /* LaunchScreen.storyboard in Resources */,
+				F6D829B42D939BBD0057C0D0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6D8298B2D939BA90057C0D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6D829BF2D939C080057C0D0 /* TaskListViewControllerViewModel.swift in Sources */,
+				F6D829E62D93AED00057C0D0 /* TaskRepositoryEvent.swift in Sources */,
+				F6D829D62D939FB50057C0D0 /* UITextResource.swift in Sources */,
+				F6D829F02D942C690057C0D0 /* EventViewModel.swift in Sources */,
+				F6D829B52D939BBD0057C0D0 /* AppDelegate.swift in Sources */,
+				F6D829DE2D93A50D0057C0D0 /* AppFactory.swift in Sources */,
+				F69FBB992D9554EF009EAE60 /* TaskModel.swift in Sources */,
+				F6D829E22D93A6020057C0D0 /* TaskRepository.swift in Sources */,
+				F6D829BD2D939BFB0057C0D0 /* TaskObject.swift in Sources */,
+				F6D829EC2D93E2900057C0D0 /* TaskCreateViewController.swift in Sources */,
+				F6D829EE2D93E2C50057C0D0 /* TaskCreateViewControllerViewModel.swift in Sources */,
+				F6D829BB2D939BF40057C0D0 /* TaskListViewController.swift in Sources */,
+				F6D829B62D939BBD0057C0D0 /* SceneDelegate.swift in Sources */,
+				F6D829EA2D93C15D0057C0D0 /* Date+Extension.swift in Sources */,
+				F6D829B92D939BE10057C0D0 /* TaskTableViewCell.swift in Sources */,
+				F6D829D42D939FA60057C0D0 /* UIColorResource.swift in Sources */,
+				F6D829D82D93A0880057C0D0 /* TaskEditViewController.swift in Sources */,
+				F6D829E82D93B7790057C0D0 /* UIFontResource.swift in Sources */,
+				F6D829C12D939C120057C0D0 /* TaskTableViewCellViewModel.swift in Sources */,
+				F6D829DA2D93A09B0057C0D0 /* TaskEditViewControllerViewModel.swift in Sources */,
+				F6D829C92D939C710057C0D0 /* RealmService.swift in Sources */,
+				F6D829E02D93A5430057C0D0 /* TaskRepositoryProtocol.swift in Sources */,
+				F6D829F22D944BDB0057C0D0 /* UIButton+Extension.swift in Sources */,
+				F6D829DC2D93A1E20057C0D0 /* UIImageResource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F6D829AB2D939BBD0057C0D0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6D829AA2D939BBD0057C0D0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F6D829AD2D939BBD0057C0D0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6D829AC2D939BBD0057C0D0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6D829A32D939BAA0057C0D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VZ8JQY42E8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TodoListRealmDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hueiderhuang.TodoListRealmDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F6D829A42D939BAA0057C0D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VZ8JQY42E8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TodoListRealmDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hueiderhuang.TodoListRealmDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F6D829A52D939BAA0057C0D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F6D829A62D939BAA0057C0D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6D8298A2D939BA90057C0D0 /* Build configuration list for PBXProject "TodoListRealmDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6D829A52D939BAA0057C0D0 /* Debug */,
+				F6D829A62D939BAA0057C0D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6D829A22D939BAA0057C0D0 /* Build configuration list for PBXNativeTarget "TodoListRealmDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6D829A32D939BAA0057C0D0 /* Debug */,
+				F6D829A42D939BAA0057C0D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F6D829CE2D939E020057C0D0 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F6D829CF2D939E020057C0D0 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6D829CE2D939E020057C0D0 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F6D829872D939BA90057C0D0 /* Project object */;
+}
